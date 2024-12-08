@@ -1,0 +1,263 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ @font-face {
+   font-family: yekan ;
+   src: url(/Fonts/Yekan-Bold.ttf);
+ }
+ 
+ @font-face {
+   font-family: sans;
+   src: url(/fonts/Iranian\ Sans.ttf);
+ }
+
+ @font-face {
+   font-family: vazirl;
+   src: url(/fonts/Vazir-Light.ttf);
+ }
+ 
+ @font-face {
+   font-family: Vazirb;
+   src: url(/fonts/Vazir-Bold.ttf);
+ }
+ 
+ @font-face {
+   font-family: Vazirm;
+   src: url(/fonts/Vazir-Medium.ttf);
+ }
+
+ @font-face {
+   font-family: Vazirbl;
+   src: url(fonts/Vazir-Black.ttf);
+ }
+ 
+ @font-face {
+   font-family: shabnamb;
+   src: url(/fonts/Shabnam-Bold.ttf);
+ }
+ 
+ @font-face {
+ font-family: shabnamm;
+ src: url(/fonts/Shabnam-Medium.ttf);
+ }
+ 
+ @font-face {
+ font-family: shabnaml;
+ src: url(/fonts/Shabnam-Light.ttf);
+ }
+ 
+ @font-face {
+ font-family: shabnamt;
+ src: url(/fonts/Shabnam-Thin.ttf);
+ }
+
+ @font-face {
+ font-family: titr;
+ src: url(/fonts/B\ Titr\ Bold_0.ttf);
+ }
+
+ @font-face {
+ font-family: yekan;
+ src: url(/fonts/Yekan-Bold.ttf);
+ }
+ 
+
+
+.input {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 50px;
+   z-index: 1;
+   padding: 10px 50px;
+   font: 15px vazir;
+   outline: none;
+}
+
+.s-icon {
+   position: absolute;
+   fill: blue;
+   inset: auto 15px 12px auto;
+   z-index: 1;
+   width: 25px;
+}
+
+.confirm {
+   position: absolute;
+   inset: auto 5px 6px auto;
+   z-index: 1;
+   width: 40px;
+   height: 40px;
+   color: blue;
+   cursor: pointer;
+   background-color: rgb(255, 255, 255);
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font: 15px shabnamb;
+   display: none;
+}
+
+.receiveBox {
+   position: absolute;
+   width: 100%;
+   height: 95%;
+   background-color:hsla(326,100%,50%,1);
+   background-image:
+      radial-gradient(at 40% 20%, hsla(51,100%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(212,100%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 13% 16%, hsla(18,100%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 8% 13%, hsla(3,100%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(45,100%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(265,100%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(6,100%,61%,1) 0px, transparent 50%);
+   overflow: auto;
+   gap: 10px;
+}
+
+.sendData1 {
+   position: relative;
+   float: right;
+   bottom: 0;
+   max-width: 70%;
+   min-width: 70px;
+   padding: 15px 15px 30px 15px;
+   border-radius: 20px;
+   border-bottom-right-radius: 0;
+   color: black;
+   font: 15px shabnamt;
+   margin-right: 10px;
+   background-color: rgba(255, 255, 255, 0.2);
+   animation: come 0.3s forwards;
+   cursor: default;
+}
+
+.delete {
+   display: none;
+}
+
+@keyframes come {
+   to {
+      bottom: 40px;
+   }
+}
+
+.sendData2 {
+   position: relative;
+   float: left;
+   bottom: 0;
+   max-width: 70%;
+   min-width: 70px;
+   padding: 15px 15px 30px 15px;
+   border-radius: 20px;
+   border-bottom-left-radius: 0;
+   color: white;
+   font: 15px shabnamt;
+   margin-left: 10px;
+   background-color: rgba(0, 0, 0, 0.5);
+   animation: come 0.3s forwards;
+   cursor: default;
+}
+
+.container {
+   position: relative;
+   /* display: block; */
+   width: 100%;
+   display: table;
+   height: 50px;
+   top: 90%;
+}
+
+.date {
+   position: absolute;
+   color: rgb(255, 255, 255);
+   width: 50px;
+   bottom: 0;
+   right: 20px;
+   animation: date 0.3s forwards;
+   cursor: default;
+}
+
+.date2 {
+   position: absolute;
+   color: white;
+   width: 50px;
+   bottom: 0;
+   left: 2px;
+   animation: date 0.3s forwards;
+   cursor: default;
+}
+
+@keyframes date {
+   to {
+      bottom: 45px;
+   }
+}
+
+.container2 {
+   position: relative;
+   display: block;
+   width: 100%;
+   display: table;
+   height: 10px;
+   top: 88.3%;
+}
+
+::-webkit-scrollbar {
+   width: 7px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: rgba(0, 0, 0, 0.212);
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 26, 255, 0.527);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background-color: rgb(0, 26, 255);
+   width: 15px;
+}
+
+.attach {
+   width: 25px;
+   position: absolute;
+   z-index: 1;
+   inset: auto auto 13px 20px;
+   z-index: 1;
+}
+
+::-webkit-file-upload-button {
+   opacity: 0;
+   height: 50px;
+}
+
+.custom-div {
+   position: absolute;
+   width: 150px;
+   height: fit-content;
+   background-color: rgb(255, 255, 255);
+   top: -180px;
+   left: -140px;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.options {
+   color: rgb(146, 146, 146);
+   font: 15px vazir;
+   text-align: center;
+   cursor: pointer;
+   padding: 8.5px;
+   
+
+   &:hover {
+      background-color: rgb(240, 240, 240);
+      color: rgb(0, 26, 255);
+   }
+}
